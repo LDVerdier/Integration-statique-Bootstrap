@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+  <!--CDN = content delivery network
+  https://getbootstrap.com/docs/5.0/utilities/text/-->
+  <title>oBlog</title>
+</head>
+<body>
+
+  <!--
+    To align navbar to right side, you've to make only two changes. they are: in navbar-nav class add w-100 as navbar-nav w-100 to make width as 100. in nav-item dropdown class add ml-auto as nav-item dropdown ml-auto to make margin left as auto.
+    https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  -->
+
+  
+  
+    <header class="container-fluid ">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light bg-light ">
+                <div class="container-fluid  ps-0">
+                <a class="navbar-brand border-end col-4 col-md-2 text-center " href="#">A la dérive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-md-flex justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav text-center ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teamback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teamfront</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collaboration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ma vie de dev</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row text-center border-top pt-2">
+            <h1>A la dérive</h1>
+        </div>
+        <div class="row text-center border-top pt-1">
+        <p >Un blog collaboratif de développeurs web dérivant délibérément au milieur de l'espace</p>
+        </div>
+    </header>
+
+
+
+<div class="container-fluid d-lg-flex  justify-content-end">
+  <div class="container-fluid col-md-8 mx-md-auto col-lg-7 mx-lg-0">
+
+    <div class="card mx-1 mb-2  ">
+      <div class="card-header fw-bold ">Article title</div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla quidem. Ad, accusamus! Tempore tenetur non porro iure a aliquid accusantium autem dolor fuga rem, provident beatae quae molestiae molestias nisi tempora eum officia repellat.</p>
+        <a href="#" class="fw-bold text-reset text-decoration-none">Meta info</a>
+      </div>
+    </div>
+    <div class="card mx-1 mb-2 ">
+      <div class="card-header fw-bold ">Article title</div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla quidem. Ad, accusamus! Tempore tenetur non porro iure a aliquid accusantium autem dolor fuga rem, provident beatae quae molestiae molestias nisi tempora eum officia repellat.</p>
+        <a href="#" class="fw-bold text-reset text-decoration-none">Meta info</a>
+      </div>
+    </div>
+    <div class="card mx-1 mb-2 ">
+      <div class="card-header fw-bold ">Article title</div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla quidem. Ad, accusamus! Tempore tenetur non porro iure a aliquid accusantium autem dolor fuga rem, provident beatae quae molestiae molestias nisi tempora eum officia repellat.</p>
+        <a href="#" class="fw-bold text-reset text-decoration-none">Meta info</a>
+      </div>
+    </div>
+    <div class="card mx-1 mb-2 ">
+      <div class="card-header fw-bold ">Article title</div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla quidem. Ad, accusamus! Tempore tenetur non porro iure a aliquid accusantium autem dolor fuga rem, provident beatae quae molestiae molestias nisi tempora eum officia repellat.</p>
+        <a href="#" class="fw-bold text-reset text-decoration-none">Meta info</a>
+      </div>
+    </div>
+    <div class="row ">
+    <nav aria-label="Page navigation example ">
+      <ul class="pagination d-flex justify-content-between mx-1 mt-1 mb-2">
+        <li class="page-item "><a class="page-link border-0" href="#">&lt; Previous</a></li>
+        <li class="page-item"><a class="page-link border-0" href="#">Next &gt;</a></li>
+      </ul>
+    </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid col-md-8 mx-md-auto mx-lg-0 col-lg-3">
+    <div class="row mt-2 mb-4 ">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>     
+    </div>
+    
+    <div class="card text-center mb-3 ">
+        <div class="card-header bg-warning fw-bold ">
+          Catégories
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">TeamBack</li>
+          <li class="list-group-item">Teamfront</li>
+          <li class="list-group-item">Collaboration</li>
+          <li class="list-group-item">Ma vie de dev</li>
+        </ul>
+    </div>
+    <div class="card text-center mb-3 ">
+        <div class="card-header bg-warning fw-bold ">
+          Auteurs
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Maxime</li>
+          <li class="list-group-item">Dario</li>
+          <li class="list-group-item">Lucie</li>
+          <li class="list-group-item">Anthony</li>
+        </ul>
+    </div>
+  </div>
+   
+</div>
+
+  <footer class="container-fluid border-top ">
+    <div class="row  pt-1">
+      <div class="btn-group col-4 col-md-3 col-lg-2 mx-auto">
+          <a href="#" class="btn  " aria-current="page"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="btn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="btn"><i class="fas fa-share-alt"></i></a>
+      </div>
+    </div>
+    <nav class="navbar  mx-auto  ">
+      <ul class="navbar-nav col-4  mx-auto text-center d-md-flex flex-md-row justify-content-between col-md-8 col-lg-5">
+        <li class="nav-item mb-1" ><a href="#">Contactez-nous</a></li>
+        <li class="nav-item mb-1" ><a href="#">Qui sommes-nous ?</a></li>
+        <li class="nav-item mb-1" ><a href="#">Mentions légales</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ece2f5296a.js" crossorigin="anonymous"></script>
+</body>
+</html>
